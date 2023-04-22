@@ -1,10 +1,8 @@
 def sum(a, b):
-    a += 1
-    b -= 1
-    if b > 0:
-        return sum(a, b)
-    else:
-        return a
+    if a == 0:
+        return b;
+    return sum(a-1, b+1)
+
 
 a = int(input("a="))
 b = int(input("b="))
